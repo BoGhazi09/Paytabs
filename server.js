@@ -23,7 +23,7 @@ app.post("/create-payment", async (req, res) => {
         cart_id: Date.now().toString(),
         cart_description: "Order",
         cart_currency: req.body.currency || "USD",
-        cart_amount: req.body.amount || 10,
+        cart_amount: req.body.amount || 4.99,
         callback: "https://paytabs-he4d.onrender.com/callback",
         return: "https://your-actual-site.lovable.app/success",
       }),
